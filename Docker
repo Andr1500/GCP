@@ -1,0 +1,69 @@
+Docker
+
+docket images
+
+docker ps 
+
+Docker Engine - engine on the Virtual mashine
+
+Docker Container - comtainer with going virtual mashine
+
+Docker Image - image with virtual mashine
+
+Dockerfile - the file with commands for the image
+
+sudo systemctl status docker
+
+docker images - show images on the mashine
+
+Docker hub - something for needed images
+
+docker search tomcat
+
+docker pull tomcat
+
+docker ps - running containers
+
+docker ps -a - were run containers any time
+
+docker ps -a -q  - history of run containers only ID
+
+docker run --name hello -d --rm hello-world  - run and delete after stop the container
+
+ docker rm $(docker ps -qa)   - delete all containers running during the history
+
+docker run -it -p 1234:8080 tomcat  - run the container with the port '1234' from the server side
+
+docker run -d -p 1235:8080 tomcat 
+
+docker run -d -p 1237:80 nginx
+
+docker rmi hello-world  - delete image from the container
+
+docker build -t vebpage:v1 .  - run veb page on the Docker
+
+docker run -d -p 7777:80 vebpage:v1
+
+docker tag vebpage:v1 vebpage:copy
+
+docker exec -it 66705c081918 /bin/bash  - login into my image with webpage
+
+root@66705c081918:/var/www/html# echo "version v2" >> index.html
+
+https://github.com/adv4000/docker/blob/master/DockerfileUbuntu.txt
+
+eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc pfifo_fast state UP group default q
+len 1000
+    link/ether 42:01:0a:a6:00:07 brd ff:ff:ff:ff:ff:ff
+    inet 10.166.0.7/32 brd 10.166.0.7 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::4001:aff:fea6:7/64 scope link 
+       valid_lft forever preferred_lft forever
+	   
+New password for windows server: :#2QDsQ|>70|b%5
+
+user:     or devops
+
+new password for windows10 : XYOcaI@#=jnh#,?
+
+Vasia: GxagXuK91JaZhJzzwvgl
