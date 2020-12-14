@@ -1,0 +1,66 @@
+minikube start --driver=virtualbox
+
+minicube start
+
+minikube ssh
+
+kubectl cluster-info
+
+kubectl version --client
+
+kubectl get componentstatuses
+
+kubectl get nodes
+
+gcloud services enable container.googleapis.com
+
+gcloud container clusters create andr1 --zone=europe-west4 --num-nodes=3
+
+gcloud container clusters get-credentials andr1
+
+gcloud container clusters create andr1 --num-nodes=1
+
+docker build myk8sapp1 .
+
+docker push andr1500/k8sphp:tagname
+
+docker rmi 0830398268d1 -f
+
+kubectl run hello --generator=run-pod/v1  --image=andr1500/k8sphp:latest --port=80
+
+kubectl delete pods hello
+
+kubectl describe pods hello  - more info about the pod
+
+kubectl exec -it hello sh  - login on pod
+
+kubectl port-forward hello 7788:80  forwarding port from our PC
+
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
+gcloud compute instances create ace-instance-1, ace-instance-2
+
+gcloud compute instances stop INSTANCE-NAME
+
+#create a container
+
+gcloud container clusters create ch07-cluster --num-nodes=3 --region=us-central1
+
+gcloud components install kubectl
+
+75
+create new file in bash:  touch ping-deploy.yml
+
+open file in bash: vim ping-deploy.yml
+
+check what is in: cat ping-deploy.yml
+
+kubectl apply -f ping-deploy.yml
+
+kubectl get deploy
+
+kubectl get pods -o wide
+
+apt-get install iputils-ping curl dnsutils iproute2 -y  - install tool
+
+kubectl exec -it pingtest-67576d584-bgqqb bash
