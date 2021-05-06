@@ -1,0 +1,16 @@
+login on GCP Virtual Machines with ssh keys:
+
+1. login on necessary machine and create ssh key:
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+#here must be the reall e-mail from necessary user machine,
+#don't put any name or key during the process of creating
+
+2. show public key
+cat ~/.ssh/id_rsa.pub
+
+3. copy the public key and add it on rhe necessary machine,
+in the fild "ssh keys"
+
+4. reload the machine from which will be connection 
+
+5. connect with necessary machine with ssh.
